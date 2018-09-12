@@ -72,6 +72,9 @@ Asi pasamos nuestras _user stories_ a pruebas automatizadas, que podremos ejecut
 
 ## Lectura recomendada
 https://www.mountaingoatsoftware.com/agile/new-to-agile-or-scrum
+
 https://www.mountaingoatsoftware.com/agile/user-stories
+
 https://martinfowler.com/bliki/GivenWhenThen.html
+
 https://martinfowler.com/bliki/TestDrivenDevelopment.html

@@ -7,4 +7,6 @@
  * in the user guide at https://docs.gradle.org/4.8/userguide/multi_project_builds.html
  */
 
+enableFeaturePreview('IMPROVED_POM_SUPPORT')
+
 rootProject.name = 'tdd_gdd examples'

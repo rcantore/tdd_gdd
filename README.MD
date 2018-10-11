@@ -5,8 +5,8 @@ Los test de comportamiento nos permiten probar nuestro sistema en un nivel un po
 
 Al tener una buena cobertura de nuestro sistema nos encontramos con que generamos lo siguiente:
 * **Confianza:** sabemos que si algo sale mal los test nos lo van a hacer saber y podemos deshacer lo que haya salido mal.
-* **Refactor seguro:** En base a la confianza ganada, podemos hacer casi cualquier refactor que se nos ocurra, sabemos que si los test dan bien no vamos a haber roto nada, y sin falla, estamos siempre a un rollback de distancia de la tranquilidad
-* **Nuevos features seguros:** Otra pata que se desprende de la confianza es la posibilidad de generar nuevos features seguros, que no van a romper con el desarrollo previo, y si lo hacen, los tests daran la alarma y nuevamente podemos volver atras con lo que falle
+* **Refactor seguro:** Sobre la base de la confianza ganada, podemos hacer casi cualquier refactor que se nos ocurra, sabemos que si los test dan bien no vamos a haber roto nada; y si aún así falla, estamos siempre a un rollback de distancia de la tranquilidad
+* **Nuevos features seguros:** Otra ventaja que se desprende de la confianza es la posibilidad de generar nuevos features seguros, que no van a romper con el desarrollo previo, y si lo hacen, los tests darán la alarma y nuevamente podemos volver atrás con lo que falle
 
 ### ¿Pero cómo podemos implementar esto?
 No es necesario que tengamos un proyecto realizado 100% con TDD y/o BDD, podemos generar test de comportamiento siguiendo ciertas premisas basicas de la metodologia SCRUM, sobre todo en lo que se refiere a las _user stories_
@@ -33,8 +33,8 @@ _**Como** usuario, **quiero** copiar todo mi disco rigido (epic)_
 
 Esta epic user story se puede dividir en docenas de _user stories_ mas pequeñas, como por ejemplo:
 
-* _**Como** usuario avanzado, **puedo** especificar que archivos copiar_
-* _**Como** usuario, **puedo** indicar que archivos no copiar cuando el disco no este lleno_
+* _**Como** usuario avanzado, **quiero** especificar que archivos copiar_
+* _**Como** usuario, **quiero** indicar que archivos no copiar cuando el disco no este lleno_
 
 Para agregar detalle a las _user stories_, se pueden dividir en _user stories_ mas pequeñas, se les puede agregar condiciones de realizado (_Definicion de Hecho_)
 Asi, como un poco mas de detalle tendriamos _user stories_ de este tipo:
@@ -43,16 +43,16 @@ _**Como** vice presidente de marketing, **quiero** evaluar una temporada de fies
 
 Como detalle extra podriamos agregar en la definicion:
 
-&nbsp;&nbsp;&nbsp;_Asegurarnos que funcione con la mayoria de las principales fiestas: Navidad, Pascuas, dia de la madre, del padre.
+&nbsp;&nbsp;&nbsp;_Asegurarnos que funcione con la mayoría de las principales fiestas: Navidad, Pascuas, dia de la madre, del padre.
 Tomar hasta 2 años calendario_
 
 ## Plasmado en Gherkin y Cucumber
-Esta metodologia parece muy buena, pero ¿Como implemento esto en mi proyecto?
+Esta metodología parece muy buena, pero ¿cómo implemento esto en mi proyecto?
 Para esto contamos con 2 herramientas, Gherkin y Cucumber
 
-### Gherkin
+### Gherkin
 
-Gherkin, es un lenguaje comprensible, que vamos a usar para describir funcionalidades, definiendo el comportamiento del software, sin entrar en la implementación. Es facil de leer y entender. Ademas nos permite crear la documentacion a la par con los test de comportamiento. Mas interesante aun, soporta varios idiomas ademas del ingles
+Gherkin, es un lenguaje comprensible, que vamos a usar para describir funcionalidades, definiendo el comportamiento del software, sin entrar en la implementación. Es fácil de leer y entender. Además nos permite crear la documentacion en conjunto con las pruebas de comportamiento. Más interesante aún, es que soporta varios idiomas ademas del inglés.
 
 Para empezar basta con conocer 5 palabras basicas:
 
@@ -62,7 +62,7 @@ Para empezar basta con conocer 5 palabras basicas:
 * _**When**_: Especifica el conjunto de acciones que lanzan el test. La interacción del usuario que acciona la funcionalidad que deseamos testear.
 * _**Then**_: Especifica el resultado esperado en el test. Observamos los cambios en el sistema y vemos si son los deseados.
 
-Asi pasamos nuestras _user stories_ a pruebas automatizadas, que podremos ejecutar con la ayuda de cucumber
+Así pasamos nuestras _user stories_ a pruebas automatizadas, que podremos ejecutar con la ayuda de Cucumber
 
 
 ### Ejemplos
